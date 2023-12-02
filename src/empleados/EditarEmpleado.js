@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function AgregarEmpleado() {
+export default function EditarEmpleado() {
     let navegacion = useNavigate();
 
   const[empleado, setEmpleado] = useState({
@@ -29,7 +29,7 @@ export default function AgregarEmpleado() {
   return (
     <div className='container'>
         <div className='container text-center' style={{margin: "30px"}}>
-          <h3>Agregar empleado</h3>
+            <h3>Editar empleado</h3>
         </div>
 
         <form onSubmit={(e) =>onSubmit(e)}>
@@ -50,7 +50,7 @@ export default function AgregarEmpleado() {
         </div>
         <div className='text-center'>
             <a href='/' className='btn btn-danger btn-sm me-3'>Regresar</a>
-            <button type="submit" className="btn btn-warning btn-sm">Agregar</button>
+            <button type="submit" className="btn btn-warning btn-sm">Guardar</button>
         </div>
         </form>
     </div>
