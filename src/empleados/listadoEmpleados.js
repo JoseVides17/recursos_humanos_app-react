@@ -24,7 +24,7 @@ export default function ListadoEmpleados() {
 
     const eliminarEmpleado = async (id) =>{
         await axios.delete(`${urlBase}/${id}`);
-        listarEmpleados();
+        listarEmpleados();node 
     }
 
   return (
